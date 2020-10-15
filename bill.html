@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILL</title>
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>INVOICE</h1>
+    <div id="componydetails">
+        <label contenteditable="true">MELDI MOTORS</label><br>
+        <label contenteditable="true">GANDHINAGAR-MANSA HIGH WAY, RANDHEJA</label><br>
+        <label contenteditable="true">CONTACT NUMBER: +91 94276 98978</label>
+    </div>
+
+    <form method="post">
+        <table id="table1">
+            <tr>
+                <th><label>Invoice Number</label></th>
+                <th><label for="date">Date Of Issue</label></th>
+            </tr>
+            
+            <tr>
+                <th>#<label id="invoicenumber" contenteditable="true">0001</label></th>
+                <th><input type="date" name="date" id="date" class=""></th>
+            </tr>
+        </table><br><br><br>
+
+        <label>Billed to,</label><br>
+        <div class="">
+            <input type="text" id="customername" placeholder="Customer Name"><br>
+            <input type="text" id="streetaddress" placeholder="Street address"><br>
+            <input type="text" id="city" placeholder="City"><br>
+            <input type="tel" id="contactnumber" placeholder="Contact Number">
+            <br><br><br>
+        
+
+        <table id="table2" class="">
+            <tr id="row1">
+                <th>Description</th>
+                <th>Unit Cost</th>            
+                <th>Qty / Rate</th>
+                <th>Amount</th>
+            </tr>
+            <tr id="row2">
+                <th><input type="text" id="service1" class="service " placeholder="Service1"></th>
+                <th><input type="number" id="unitcost1" class="unitcost " placeholder="₹0"></th>
+                <th><input type="number" id="rate1" placeholder="0" class="rate "></th>
+                <th><input type="number" id="amount1" placeholder="₹0" class="amount "></th>
+            </tr>
+            <tr id="row3">
+                <th><input type="text" id="service2" class="service " placeholder="Service2"></th>
+                <th><input type="number" id="unitcost2" class="unitcost " placeholder="₹0"></th>
+                <th><input type="number" id="rate2" placeholder="0" class="rate "></th>
+                <th><input type="number" id="amount2" placeholder="₹0" class="amount "></th>
+            </tr>
+            <tr id="row4">
+                <th><input type="text" id="service3" class="service " placeholder="Service3"></th>
+                <th><input type="number" id="unitcost3" class="unitcost " placeholder="₹0"></th>
+                <th><input type="number" id="rate3" placeholder="0" class="rate "></th>
+                <th><input type="number" id="amount3" placeholder="₹0" class="amount "></th>
+            </tr>
+            <tr id="row5">
+                <th><input type="text" id="service4" class="service " placeholder="Service4"></th>
+                <th><input type="number" id="unitcost4" class="unitcost " placeholder="₹0"></th>
+                <th><input type="number" id="rate4" placeholder="0" class="rate "></th>
+                <th><input type="number" id="amount4" placeholder="₹0" class="amount "></th>
+            </tr>
+            <tr id="row6">
+                <th><input type="text" id="service5" class="service " placeholder="Service5"></th>
+                <th><input type="number" id="unitcost5" class="unitcost " placeholder="₹0"></th>
+                <th><input type="number" id="rate5" placeholder="0" class="rate "></th>
+                <th><input type="number" id="amount5" placeholder="₹0" class="amount "></th>
+            </tr>
+            <tr id="row7">
+                <th><input type="text" id="service6" class="service " placeholder="Service6"></th>
+                <th><input type="number" id="unitcost6" class="unitcost " placeholder="₹0"></th>
+                <th><input type="number" id="rate6" placeholder="0" class="rate "></th>
+                <th><input type="number" id="amount6" placeholder="₹0" class="amount "></th>
+            </tr>
+            <tr id="row8">
+                <th><input type="text" id="service7" class="service " placeholder="Service7"></th>
+                <th><input type="number" id="unitcost7" class="unitcost " placeholder="₹0"></th>
+                <th><input type="number" id="rate7" placeholder="0" class="rate "></th>
+                <th><input type="number" id="amount7" placeholder="₹0" class="amount "></th>
+            </tr>
+            <tr id="row9">
+                <th><input type="text" id="service8" class="service " placeholder="Service8"></th>
+                <th><input type="number" id="unitcost8" class="unitcost " placeholder="₹0"></th>
+                <th><input type="number" id="rate8" placeholder="0" class="rate "></th>
+                <th><input type="number" id="amount8" placeholder="₹0" class="amount "></th>
+            </tr>
+            
+        </table>
+        
+        <div id="table3">
+            <table >
+                <tr>
+                    <th>Subtotal</th>
+                    <th><input type="number" name="subtotal" id="subtotal"></th>
+                </tr>
+                <tr>
+                    <th>Discount</th>
+                    <th><input type="number" name="discount" id="discount" placeholder="IN PERCENTAGE" value="jio"></th>
+                </tr>
+                <tr>
+                    <th>Tax</th>
+                    <th><input type="number" name="tax" id="tax" placeholder="IN PERCENTAGE"></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+        <br><br><br> 
+        <div class="grey">
+            <label id="lbtotal">Invoice Total</label>
+            <label id="total">0</label>₹
+        </div>
+
+    <input type="button" value="Submit" id="submit" onkeypress="window.print()">
+    </form>
+    
+    <script src="js/total.js"></script>
+    <script src="js/alerts.js"></script>
+    <script src="js/bill.js"></script>
+</body>
+</html>
