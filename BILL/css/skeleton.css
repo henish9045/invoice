@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+}
+
+#table3{
+    text-align: right;
+    margin-left: 65%;
+}
+
+#table1{
+    text-align: right;
+}
+
+.grey{
+    float: right;
+    border-radius: 6px;
+}
+
+#componydetails{
+    text-align: center;
+    font-size: larger;
+}
+
+#buttons{
+    text-align: center;
+}
+
+#alltotal{
+    font-weight: bolder;
+    background-color: teal;
+    border-radius: 6px;
+    border-color: skyblue;
+    float: right;
+}
+
